@@ -16,10 +16,6 @@ You can list all of your configured aliases by passing the `alias` command witho
 alias
 ```
 
-
-## Todo
-Configure aliases to use git-competion as described in the [git-completion comments](https://github.com/git/git/edit/master/contrib/completion/git-completion.bash)
-
 ## Sources
 https://natelandau.com/my-mac-osx-bash_profile/    
 https://github.com/mathiasbynens/dotfiles    

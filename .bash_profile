@@ -149,9 +149,9 @@ parse_git_branch() {
 source ~/git-completion.bash
 
 
-##############################
-# FUNCTIONS NEED TO BE FIRST
-##############################
+###############
+# FUNCTIONS
+###############
 # function Extract for common file formats
 extract () {
  if [ -z "$1" ]; then

@@ -7,7 +7,7 @@ git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && bash ./be-bop-
 ```
 
 ## Info
-If you want to get rid of an alias, just use the `unalias` command:
+If you want to get rid of an alias, just use the `unalias` command: 
 ```bash
 unalias ll
 ```

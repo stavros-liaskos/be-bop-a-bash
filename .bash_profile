@@ -1,43 +1,4 @@
 #!/bin/bash
-# FUNCTIONS NEED TO BE FIRST
-# function Extract for common file formats
-
-function extract {
- if [ -z "$1" ]; then
-    # display usage if no parameters given
-    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
-    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
- else
-    for n in $@
-    do
-      if [ -f "$n" ] ; then
-          case "${n%,}" in
-            *.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar) 
-                         tar xvf "$n"       ;;
-            *.lzma)      unlzma ./"$n"      ;;
-            *.bz2)       bunzip2 ./"$n"     ;;
-            *.rar)       unrar x -ad ./"$n" ;;
-            *.gz)        gunzip ./"$n"      ;;
-            *.zip)       unzip ./"$n"       ;;
-            *.z)         uncompress ./"$n"  ;;
-            *.7z|*.arj|*.cab|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.rpm|*.udf|*.wim|*.xar)
-                         7z x ./"$n"        ;;
-            *.xz)        unxz ./"$n"        ;;
-            *.exe)       cabextract ./"$n"  ;;
-            *)
-                         echo "extract: '$n' - unknown archive method"
-                         return 1
-                         ;;
-          esac
-      else
-          echo "'$n' - file does not exist"
-          return 1
-      fi
-    done
-fi
-}
-
-
 
 ###########
 # ALIASES #
@@ -64,16 +25,13 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 # docker commands
 alias dup="cd ~/developer/docker-dev-server &&  docker-sync start && docker-compose -f docker-compose-mac.yml up"
 alias dup2="cd ~/developer/docker-dev-server && docker-compose -f docker-compose-mac.yml up"
-alias drestart="docker exec -it spw-server-php-56 /bin/bash service php5-fpm restart"
 alias dre="docker exec -it spw-server-php-56 /bin/bash service php5-fpm restart"
 alias dsh="docker exec -it spw-server-php-56 bash"
 alias dcs="docker exec -it spw-server-php-56 bash -c 'rm -rf /dev/shm/* && service php5-fpm restart'"
 alias dxdebug="docker exec -it spw-server-php-56 xdebug-off"
 
-#function dstop() { docker stop $(docker ps -a -q); }
-#function drm() { docker rm $(docker ps -a -q); }
-#alias dstop="docker stop $(docker ps -aq)"
-#alias drm="docker rm $(docker ps -aq)"
+dstop() { docker stop $(docker ps -a -q); }
+drm() { docker rm $(docker ps -a -q); }
 
 # faster commands
 alias lls="ls -lah"
@@ -107,13 +65,10 @@ alias pus="git push"
 alias pull="git pull"
 alias pul="git pull"
 alias checkout="git checkout"
-alias che="git checkout"
 alias ched="git checkout develop"
 alias che-="git checkout --"
 alias branch="git branch"
-alias bra="git branch"
 alias merge="git merge"
-alias mer="git merge"
 alias fetch="git fetch"
 alias fet="git fetch"
 alias add="git add"
@@ -129,6 +84,10 @@ alias feap="git flow feature publish"
 #alias feaf="git flow feature finish"
 alias stash="git stash"
 
+__git_complete che _git_checkout
+__git_complete bra _git_branch
+__git_complete mer __git_merge
+
 # vagrant commands
 alias vup="vagrant up"
 alias vap="vagrant up"
@@ -139,6 +98,10 @@ alias vssh="vagrant ssh"
 alias vsh="vagrant ssh"
 alias vreload="vagrant reload"
 alias vstatus="vagrant status"
+
+# networking
+alias myip="curl http://ipecho.net/plain; echo"
+
 
 ########
 # CONF #
@@ -179,10 +142,52 @@ parse_git_branch() {
 #   ------------------------------------------------------------
     export BLOCKSIZE=1k
 
+
 ########################
 # Git autocompletion
 ########################
 source ~/git-completion.bash
+
+
+##############################
+# FUNCTIONS NEED TO BE FIRST
+##############################
+# function Extract for common file formats
+extract () {
+ if [ -z "$1" ]; then
+    # display usage if no parameters given
+    echo "Usage: extract <path/file_name>.<zip|rar|bz2|gz|tar|tbz2|tgz|Z|7z|xz|ex|tar.bz2|tar.gz|tar.xz>"
+    echo "       extract <path/file_name_1.ext> [path/file_name_2.ext] [path/file_name_3.ext]"
+ else
+    for n in $@
+    do
+      if [ -f "$n" ] ; then
+          case "${n%,}" in
+            *.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
+                         tar xvf "$n"       ;;
+            *.lzma)      unlzma ./"$n"      ;;
+            *.bz2)       bunzip2 ./"$n"     ;;
+            *.rar)       unrar x -ad ./"$n" ;;
+            *.gz)        gunzip ./"$n"      ;;
+            *.zip)       unzip ./"$n"       ;;
+            *.z)         uncompress ./"$n"  ;;
+            *.7z|*.arj|*.cab|*.chm|*.deb|*.dmg|*.iso|*.lzh|*.msi|*.rpm|*.udf|*.wim|*.xar)
+                         7z x ./"$n"        ;;
+            *.xz)        unxz ./"$n"        ;;
+            *.exe)       cabextract ./"$n"  ;;
+            *)
+                         echo "extract: '$n' - unknown archive method"
+                         return 1
+                         ;;
+          esac
+      else
+          echo "'$n' - file does not exist"
+          return 1
+      fi
+    done
+fi
+}
+
 
 ###########
 # Sources #

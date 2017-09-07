@@ -1,5 +1,11 @@
 #!/bin/bash
 
+########################
+# Git autocompletion
+########################
+source ~/git-completion.bash
+
+
 ###########
 # ALIASES #
 ###########
@@ -84,9 +90,15 @@ alias feap="git flow feature publish"
 #alias feaf="git flow feature finish"
 alias stash="git stash"
 
+# Git branch bash completion
+#if [ -f ~/.git-completion.bash ]; then
+#  bash ~/.git-completion.bash
+
+  # Add git completion to aliases
 __git_complete che _git_checkout
 __git_complete bra _git_branch
 __git_complete mer __git_merge
+#fi
 
 # vagrant commands
 alias vup="vagrant up"
@@ -141,12 +153,6 @@ parse_git_branch() {
 #   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
 #   ------------------------------------------------------------
     export BLOCKSIZE=1k
-
-
-########################
-# Git autocompletion
-########################
-source ~/git-completion.bash
 
 
 ###############

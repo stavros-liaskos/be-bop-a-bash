@@ -10,10 +10,11 @@ source ~/git-completion.bash
 # ALIASES #
 ###########
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
-alias qfind="find . -name " 
+alias qfind="find . -name "
 # custom commands
 alias decode="base64 -D <<< "
 alias hgrep="history | grep "
+alias cat="ccat"
 
 # routes
 alias dock="cd ~/developer/docker-dev-server"
@@ -30,7 +31,8 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 # docker commands
 alias dup="cd ~/developer/docker-dev-server &&  docker-sync start && docker-compose -f docker-compose-mac.yml up"
-alias dup2="cd ~/developer/docker-dev-server && docker-compose -f docker-compose-mac.yml up"
+#alias dup2="cd ~/developer/docker-dev-server && docker-compose -f docker-compose-mac.yml up"
+alias dup2="cd ~/developer/docker-dev-server && docker-compose up"
 alias dre="docker exec -it spw-server-php-56 /bin/bash service php5-fpm restart"
 alias dsh="docker exec -it spw-server-php-56 bash"
 alias dcs="docker exec -it spw-server-php-56 bash -c 'rm -rf /dev/shm/* && service php5-fpm restart'"
@@ -38,10 +40,12 @@ alias dxdebug="docker exec -it spw-server-php-56 xdebug-off"
 
 dstop() { docker stop $(docker ps -a -q); }
 drm() { docker rm $(docker ps -a -q); }
+drmi() { docker rmi $(docker images -q); }
 
 # faster commands
 alias lls="ls -lah"
 alias ll="ls -lah"
+alias lll="ls -lah"
 alias vagrantDown="sh ~/vagrantDown.sh"
 alias gitrm="git ls-files --deleted -z | xargs -0 git rm"
 alias notify="tput bel"			    # i.e. sleep 10; notify    , will ring a bell when execution is finished
@@ -73,13 +77,18 @@ alias pul="git pull"
 alias checkout="git checkout"
 alias ched="git checkout develop"
 alias che-="git checkout --"
+alias che="git checkout"
 alias branch="git branch"
+alias bra="git branch"
 alias merge="git merge"
+alias mer="git merge"
 alias fetch="git fetch"
 alias fet="git fetch"
 alias add="git add"
 alias clone="git clone"
 alias clo="git clone"
+alias reset="git reset"
+alias res="git reset"
 alias flow="git flow"
 alias flo="git flow"
 alias feature="git flow feature"

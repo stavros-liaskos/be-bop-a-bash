@@ -7,11 +7,15 @@ git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && bash ./be-bop-
 ```
 
 ## Info
-If you want to get rid of an alias, just use the `unalias` command: 
+To undefine an alias:
 ```bash
 unalias ll
 ```
-You can list all of your configured aliases by passing the `alias` command without any arguments:
+To undefine a function:
+````bash
+unset -f foo
+````
+To list all of your configured aliases:
 ```bash
 alias
 ```

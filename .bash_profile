@@ -6,6 +6,12 @@
 source ~/git-completion.bash
 
 
+##############
+# Nvm Init
+##############
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
+
 ###########
 # ALIASES #
 ###########

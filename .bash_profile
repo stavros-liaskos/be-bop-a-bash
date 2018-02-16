@@ -9,7 +9,11 @@ source ~/git-completion.bash
 ##############
 # Nvm Init
 ##############
-[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+# Install NVM https://github.com/creationix/nvm
+# Possible bugs: https://github.com/creationix/nvm/issues/1245
+# Possible bugs: https://github.com/creationix/nvm/issues/855
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 
 ###########

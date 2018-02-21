@@ -6,16 +6,6 @@
 source ~/git-completion.bash
 
 
-##############
-# Nvm Init
-##############
-# Install NVM https://github.com/creationix/nvm
-# Possible bugs: https://github.com/creationix/nvm/issues/1245
-# Possible bugs: https://github.com/creationix/nvm/issues/855
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-
 ###########
 # ALIASES #
 ###########
@@ -225,3 +215,12 @@ fi
 # https://natelandau.com/my-mac-osx-bash_profile/
 # https://github.com/mathiasbynens/dotfiles
 # https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
+
+
+
+#######
+# NVM #
+#######
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

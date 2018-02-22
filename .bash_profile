@@ -21,6 +21,7 @@ alias dock="cd ~/developer/docker-dev-server"
 alias vc="cd ~/developer/repos/vc/"
 alias spar="cd ~/developer/repos/sparwelt/"
 alias nuxt="cd ~/developer/repos/bitbucket/nuxt/"
+alias nice="cd ~/developer/repos/nice-sparwelt-editor/"
 alias ~="cd ~"
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level

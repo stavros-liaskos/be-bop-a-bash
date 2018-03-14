@@ -3,7 +3,7 @@ My bash configuration for Mac.
 
 ## Install
 ```bash
-git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && bash ./be-bop-a-bash/install_bash.sh
+git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && bash ./be-bop-a-bash/install.sh
 ```
 
 ## Info

@@ -1,0 +1,5 @@
+*~
+.DS_Store
+.idea/
+AppKernel.php
+yarn-error.log

@@ -20,6 +20,16 @@ To list all of your configured aliases:
 alias
 ```
 
+## Caveats
+Do NOT use `brew` to install yarn, npm, node and nvm. 
+[See here](https://github.com/creationix/nvm/issues/855)   
+If so, fix with:
+
+```
+rm -rdf /usr/local/lib/node_modules
+rm -rdf /usr/local/bin/npm
+```
+
 ## Sources
 https://natelandau.com/my-mac-osx-bash_profile/    
 https://github.com/mathiasbynens/dotfiles    

@@ -20,6 +20,8 @@ To list all of your configured aliases:
 alias
 ```
 
+You can always invoke cat after aliasing `ccat` by typing `\cat`.
+
 ## Caveats
 Do NOT use `brew` to install yarn, npm, node and nvm. 
 [See here](https://github.com/creationix/nvm/issues/855)   

@@ -33,7 +33,7 @@ rm -rdf /usr/local/bin/npm
 ```
 
 ## TODOs
-add script that installs `ccat`, `htop` and enables the .global_gitignore
+add script that installs `ccat`, `htop` and enables the .global_gitignore   
 `git config --global core.excludesfile ~/.gitignore_global`
 
 ## Sources

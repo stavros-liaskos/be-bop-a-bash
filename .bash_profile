@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ########################
-# Git autocompletion
+# External files
 ########################
 source ~/git-completion.bash
-
+source ~/.passwords
 
 ###########
 # ALIASES #

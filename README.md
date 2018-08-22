@@ -36,7 +36,7 @@ rm -rdf /usr/local/bin/npm
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  
 
 ## TODOs
-add script that installs `ccat`, `htop` and enables the .global_gitignore   
+Add script to enable the .global_gitignore   
 `git config --global core.excludesfile ~/.gitignore_global`
 
 ## Sources

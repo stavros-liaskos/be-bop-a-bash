@@ -23,6 +23,7 @@ alias spar="cd ~/developer/repos/sparwelt/"
 alias nuxt="cd ~/developer/bitbucket/nuxt/"
 alias nice="cd ~/developer/bitbucket/nice-sparwelt-editor/"
 alias sulu="cd ~/developer/repos/sulu-sparwelt/"
+alias stavros="cd ~/developer/github/stavrosliaskos/"
 alias ~="cd ~"
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level

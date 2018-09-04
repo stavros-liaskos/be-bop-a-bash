@@ -25,4 +25,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew list htop-osx &>/dev/null || brew install htop-osx
 echo "Installation complete";
 
+echo "Installing ffmpeg...";
+brew list ffmpeg &>/dev/null || brew install ffmpeg $(brew options ffmpeg | grep -vE '\s' | grep -- '--with-' | tr '\n' ' ')
+echo "Installation complete";
+
 echo "Done!";

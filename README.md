@@ -3,7 +3,7 @@ My bash configuration for Mac.
 
 ## Install
 ```bash
-git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && bash ./be-bop-a-bash/install.sh && source ~/.bash_profile
+git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && bash ./be-bop-a-bash/install.sh 
 ```
 
 ## Info
@@ -35,9 +35,6 @@ rm -rdf /usr/local/bin/npm
 ## Extra
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  
 
-## TODOs
-Add script to enable the .global_gitignore   
-`git config --global core.excludesfile ~/.gitignore_global`
 
 ## Sources
 https://natelandau.com/my-mac-osx-bash_profile/    

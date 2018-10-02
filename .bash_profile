@@ -11,19 +11,15 @@ source ~/.passwords
 ###########
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias qfind="find . -name "
+
 # custom commands
 alias decode="base64 -D <<< "
 alias hgrep="history | grep "
 alias cat="ccat"
 
 # routes
-alias dock="cd ~/developer/docker-dev-server"
-alias vc="cd ~/developer/repos/vc/"
-alias spar="cd ~/developer/repos/sparwelt/"
-alias nuxt="cd ~/developer/bitbucket/nuxt/"
-alias nice="cd ~/developer/bitbucket/nice-sparwelt-editor/"
-alias sulu="cd ~/developer/repos/sulu-sparwelt/"
-alias stavros="cd ~/developer/github/stavrosliaskos/"
+alias dock="cd ~/developer/flaconi/flaconi-docker"
+alias stavros="cd ~/developer/mine/stavrosliaskos"
 alias ~="cd ~"
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
@@ -36,13 +32,7 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 # docker commands
-alias dup="cd ~/developer/docker-dev-server &&  docker-sync start && docker-compose -f docker-compose-mac.yml up"
-#alias dup2="cd ~/developer/docker-dev-server && docker-compose -f docker-compose-mac.yml up"
-alias dup2="cd ~/developer/docker-dev-server && docker-compose up"
-alias dre="docker exec -it spw-server-php-56 /bin/bash service php5-fpm restart"
-alias dsh="docker exec -it spw-server-php-56 bash"
-alias dcs="docker exec -it spw-server-php-56 bash -c 'rm -rf /dev/shm/* && service php5-fpm restart'"
-alias dxdebug="docker exec -it spw-server-php-56 xdebug-off"
+# Todo...
 
 dstop() { docker stop $(docker ps -a -q); }
 drm() { docker rm $(docker ps -a -q); }
@@ -61,7 +51,7 @@ alias mv='mv -iv'
 alias rm='rm -i -v'
 alias cp='cp -iv'
 alias ls='ls -GFh'
-alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
+alias mkdir='mkdir -pv'         # Preferred 'mkdir' implementation
 alias sudo='sudo '			    # Enable aliases to be sudo’ed
 
 # tar/zip commands
@@ -73,7 +63,6 @@ alias zip="zip -r"
 # git commands
 alias status="git status"
 alias sta="git status"
-alias commitm="git commit -m"
 alias com="git commit -m"
 alias commit="git commit"
 alias push="git push"
@@ -107,15 +96,10 @@ alias feap="git flow feature publish"
 #alias feaf="git flow feature finish"
 alias stash="git stash"
 
-# Git branch bash completion
-#if [ -f ~/.git-completion.bash ]; then
-#  bash ~/.git-completion.bash
-
-  # Add git completion to aliases
+# Add git completion to aliases
 __git_complete che _git_checkout
 __git_complete bra _git_branch
 __git_complete mer __git_merge
-#fi
 
 # vagrant commands
 alias vup="vagrant up"

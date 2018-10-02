@@ -29,4 +29,8 @@ echo "Installing ffmpeg...";
 brew list ffmpeg &>/dev/null || brew install ffmpeg $(brew options ffmpeg | grep -vE '\s' | grep -- '--with-' | tr '\n' ' ')
 echo "Installation complete";
 
+echo "Installing yarn...";
+brew list yarn &>/dev/null || brew install yarn
+echo "Installation complete";
+
 echo "Done!";

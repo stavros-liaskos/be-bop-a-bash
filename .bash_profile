@@ -232,3 +232,13 @@ export NVM_DIR="$HOME/.nvm"
 # PHP #
 #######
 export PATH="/usr/local/php5/bin:/usr/local/bin:$PATH"
+
+############
+# AWS-ADFS #
+############
+export PATH="$PATH:$HOME/.local/bin"
+
+
+
+
+

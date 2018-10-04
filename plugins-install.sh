@@ -29,8 +29,23 @@ echo "Installing ffmpeg...";
 brew list ffmpeg &>/dev/null || brew install ffmpeg $(brew options ffmpeg | grep -vE '\s' | grep -- '--with-' | tr '\n' ' ')
 echo "Installation complete";
 
+echo "Installing nvm...";
+mkdir ~/.nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+echo "Installation complete";
+
+echo "Installing node...";
+brew uninstall --ignore-dependencies node
+rm -rdf /usr/local/lib/node_modules
+rm -rdf /usr/local/bin/npm
+nvm install node
+nvm use node
+nvm alias default
+echo "Installation complete";
+
 echo "Installing yarn...";
 brew list yarn &>/dev/null || brew install yarn
 echo "Installation complete";
+
 
 echo "Done!";

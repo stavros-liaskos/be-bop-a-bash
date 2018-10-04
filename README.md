@@ -11,6 +11,18 @@ git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && cd be-bop-a-ba
 ./install.sh
 ```
 
+## Features
+* [ccat](https://github.com/jingweno/ccat)
+* [pip](https://pypi.org/project/pip/)
+* [wget](http://brewformulas.org/Wget)
+* [youtube-dl](http://rg3.github.io/youtube-dl/)
+* [htop](https://unix.stackexchange.com/questions/98253/how-do-i-install-htop-inside-mac-os-x)
+* [ffmpeg](https://www.ffmpeg.org/)
+* [yarn]()
+* [nvm](https://github.com/creationix/nvm#mac-os-troubleshooting)
+* []()
+
+
 ## Info
 To undefine an alias:
 ```bash
@@ -28,7 +40,7 @@ alias
 You can always invoke cat after aliasing `ccat` by typing `\cat`.
 
 ## Caveats
-Do NOT use `brew` to install yarn, npm, node and nvm. 
+Do NOT use `brew` to install node and nvm. 
 [See here](https://github.com/creationix/nvm/issues/855)   
 If so, fix with:
 

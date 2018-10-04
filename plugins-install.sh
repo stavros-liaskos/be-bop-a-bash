@@ -47,5 +47,8 @@ echo "Installing yarn...";
 brew list yarn &>/dev/null || brew install yarn
 echo "Installation complete";
 
+echo "Installing yarn...";
+npm install -g now
+echo "Installation complete";
 
 echo "Done!";

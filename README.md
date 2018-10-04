@@ -2,14 +2,25 @@
 My bash configuration for Mac.
 
 ## Install
+
+#### Step 1: Clone
 ```bash
-git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && cd be-bop-a-bash && bash plugins-install.sh && bash install.sh 
+git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && cd be-bop-a-bash
 ```
 
-## Update Profile
+#### Step 2: Install Plugins
+Install all the plugins
+```bash
+bash plugins-install.sh
+```
+
+#### Step 3: Update Profile
+Install your bash_profile
 ```bash
 ./install.sh
 ```
+
+> Note: Run this script after `git pull` to install your the latest `.bash_profile` 
 
 ## Features
 * [ccat](https://github.com/jingweno/ccat)
@@ -20,7 +31,6 @@ git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && cd be-bop-a-ba
 * [ffmpeg](https://www.ffmpeg.org/)
 * [yarn]()
 * [nvm](https://github.com/creationix/nvm#mac-os-troubleshooting)
-* []()
 
 
 ## Info

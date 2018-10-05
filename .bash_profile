@@ -222,7 +222,35 @@ export PATH="/usr/local/php5/bin:/usr/local/bin:$PATH"
 ############
 export PATH="$PATH:$HOME/.local/bin"
 
+###########
+# FLACONI #
+###########
+#path needs to be relativ
+export BASH_ALIASES_PATH=developer/flaconi/dirty_little_helper/
+
+#path needs to be absolute
+export FLACONI_DOCKER_PATH=developer/flaconi/flaconi-docker/
+
+#path needs to be absolute
+#comment out the next line if you also want to include the pim bash
+#export PIM_DOCKER_PATH=
+
+if [[ -f ~/$BASH_ALIASES_PATH/.bash_aliases ]]; then
+  . ~/$BASH_ALIASES_PATH/.bash_aliases
+  # comment out the next line if you also want to include the prompt
+  #. ~/$BASH_ALIASES_PATH/.prompt
+  # comment out the next line if you also want to include the pim bash
+  #. ~/$BASH_ALIASES_PATH/.bash_pim
+fi
+
+#reloads the file in current session
+reload(){
+    echo "source ~/$BASH_ALIASES_PATH/.bash_aliases and .bash_pim"
+    source ~/$BASH_ALIASES_PATH/.bash_aliases
+    # comment out the next line if you also want to include the pim bash
+    #source ~/$BASH_ALIASES_PATH/.bash_pim
+}
 
 
 
-
+export LOCAL_USER_ID=$(id -u)

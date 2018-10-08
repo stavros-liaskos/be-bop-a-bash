@@ -62,7 +62,7 @@ rm -rdf /usr/local/bin/npm
 ## Extra
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  
 - [Live templates in PhpStorm](https://www.jetbrains.com/help/phpstorm/template-variables.html)
-
+- [Share live templates](https://www.jetbrains.com/help/phpstorm/sharing-live-templates.html)
 ## Sources
 https://natelandau.com/my-mac-osx-bash_profile/    
 https://github.com/mathiasbynens/dotfiles    

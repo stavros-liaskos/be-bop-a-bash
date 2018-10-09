@@ -18,7 +18,6 @@ alias hgrep="history | grep "
 alias cat="ccat"
 
 # routes
-alias dock="cd ~/developer/flaconi/flaconi-docker"
 alias stavros="cd ~/developer/mine/stavrosliaskos"
 alias ~="cd ~"
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
@@ -64,7 +63,6 @@ alias zip="zip -r"
 alias status="git status"
 alias sta="git status"
 alias com="git commit -m"
-alias commit="git commit"
 alias push="git push"
 alias pus="git push"
 alias pull="git pull"
@@ -76,7 +74,7 @@ alias che.="git checkout ."
 alias che-="git checkout --"
 alias che="git checkout"
 alias branch="git branch"
-alias bra="git branch"
+alias bra="git branch -a"
 alias merge="git merge"
 alias mer="git merge"
 alias fetch="git fetch"
@@ -229,7 +227,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export BASH_ALIASES_PATH=developer/flaconi/dirty_little_helper/
 
 #path needs to be absolute
-export FLACONI_DOCKER_PATH=developer/flaconi/flaconi-docker/
+export FLACONI_DOCKER_PATH=/Users/stavros.liaskos/developer/flaconi/flaconi-docker/
 
 #path needs to be absolute
 #comment out the next line if you also want to include the pim bash

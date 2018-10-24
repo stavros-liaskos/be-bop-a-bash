@@ -31,6 +31,7 @@ Install your bash_profile
 * [ffmpeg](https://www.ffmpeg.org/)
 * [yarn]()
 * [nvm](https://github.com/creationix/nvm#mac-os-troubleshooting)
+* [ImageMagick](https://www.imagemagick.org/script/index.php)
 
 
 ## Info

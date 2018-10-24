@@ -51,4 +51,8 @@ echo "Installing yarn...";
 npm install -g now
 echo "Installation complete";
 
+echo "Installing Image magick...";
+brew list yarn &>/dev/null || brew install imagemagick
+echo "Installation complete";
+
 echo "Done!";

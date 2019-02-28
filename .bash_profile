@@ -74,7 +74,7 @@ alias che.="git checkout ."
 alias che-="git checkout --"
 alias che="git checkout"
 alias branch="git branch"
-alias bra="git branch -a"
+alias bra="git branch"
 alias merge="git merge"
 alias mer="git merge"
 alias fetch="git fetch"
@@ -113,6 +113,8 @@ alias vstatus="vagrant status"
 # networking
 alias myip="curl http://ipecho.net/plain; echo"
 
+# chrome allow cors
+alias chrome-cors="open -a Google\ Chrome --args --disable-web-security --user-data-dir"
 
 ########
 # CONF #
@@ -214,6 +216,11 @@ export NVM_DIR="$HOME/.nvm"
 # PHP #
 #######
 export PATH="/usr/local/php5/bin:/usr/local/bin:$PATH"
+
+#################
+# SONAR-SCANNER #
+#################
+export PATH="/Users/stavros.liaskos/sonar-scanner-3.3.0.1492-macosx/bin:$PATH"
 
 ############
 # AWS-ADFS #

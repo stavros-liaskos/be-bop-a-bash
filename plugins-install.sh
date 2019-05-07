@@ -55,4 +55,8 @@ echo "Installing Image magick...";
 brew list yarn &>/dev/null || brew install imagemagick
 echo "Installation complete";
 
+echo "Installing Image httrack...";
+brew list yarn &>/dev/null || brew install httrack
+echo "Installation complete";
+
 echo "Done!";

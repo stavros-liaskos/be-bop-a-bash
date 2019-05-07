@@ -32,6 +32,7 @@ Install your bash_profile
 * [yarn]()
 * [nvm](https://github.com/creationix/nvm#mac-os-troubleshooting)
 * [ImageMagick](https://www.imagemagick.org/script/index.php)
+* [Httrack](https://www.httrack.com/)
 
 
 ## Info
@@ -66,6 +67,7 @@ Add [inquirer](https://github.com/SBoudrias/Inquirer.js) and have more friendly 
 
 ## Extra
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  
+- [Run eslint --fix on each Save](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000221130-Eslint-autofix-on-save-for-webstorm)   
 - [Live templates in PhpStorm](https://www.jetbrains.com/help/phpstorm/template-variables.html)
 - [Share live templates](https://www.jetbrains.com/help/phpstorm/sharing-live-templates.html)
 

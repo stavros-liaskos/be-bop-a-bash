@@ -16,6 +16,7 @@ alias qfind="find . -name "
 alias decode="base64 -D <<< "
 alias hgrep="history | grep "
 alias cat="ccat"
+alias pstorm="phpstorm"
 
 # routes
 alias stavros="cd ~/developer/mine/stavrosliaskos"

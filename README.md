@@ -36,11 +36,11 @@ Install your bash_profile
 
 
 ## Info
-To undefine an alias:
+To reset an alias:
 ```bash
 unalias ll
 ```
-To undefine a function:
+To reset a function:
 ````bash
 unset -f foo
 ````

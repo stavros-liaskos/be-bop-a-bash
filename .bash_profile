@@ -4,7 +4,7 @@
 # External files
 ########################
 source ~/git-completion.bash
-source ~/.passwords
+source ~/.tokens
 
 ###########
 # ALIASES #

@@ -52,11 +52,15 @@ npm install -g now
 echo "Installation complete";
 
 echo "Installing Image magick...";
-brew list yarn &>/dev/null || brew install imagemagick
+brew list imagemagick &>/dev/null || brew install imagemagick
 echo "Installation complete";
 
 echo "Installing Image httrack...";
-brew list yarn &>/dev/null || brew install httrack
+brew list httrack &>/dev/null || brew install httrack
+echo "Installation complete";
+
+echo "Installing Image ncdu...";
+brew list ncdu &>/dev/null || brew install ncdu
 echo "Installation complete";
 
 echo "Done!";

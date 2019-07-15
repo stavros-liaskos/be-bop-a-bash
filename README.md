@@ -33,6 +33,7 @@ Install your bash_profile
 * [nvm](https://github.com/creationix/nvm#mac-os-troubleshooting)
 * [ImageMagick](https://www.imagemagick.org/script/index.php)
 * [Httrack](https://www.httrack.com/)
+* [ncdu](https://dev.yorhel.nl/ncdu)
 
 Sets `.gitignore_global` with some basic excludes.   
 In order to protect user's privacy (i.e. tokens), `.bash_profile` imports `.tokens` file from the same directory. 

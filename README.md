@@ -30,7 +30,7 @@ Install your bash_profile
 * [htop](https://unix.stackexchange.com/questions/98253/how-do-i-install-htop-inside-mac-os-x)
 * [ffmpeg](https://www.ffmpeg.org/)
 * [yarn]()
-* [nvm](https://github.com/creationix/nvm#mac-os-troubleshooting)
+* [n](https://github.com/tj/n)
 * [ImageMagick](https://www.imagemagick.org/script/index.php)
 * [Httrack](https://www.httrack.com/)
 * [ncdu](https://dev.yorhel.nl/ncdu)
@@ -54,17 +54,6 @@ alias
 ```
 
 You can always invoke cat after aliasing `ccat` by typing `\cat`.
-
-## Caveats
-Do NOT use `brew` to install node and nvm. 
-[See here](https://github.com/creationix/nvm/issues/855)   
-If so, fix with:
-
-```
-rm -rdf /usr/local/lib/node_modules
-rm -rdf /usr/local/bin/npm
-```
-
 
 # TODO
 Add [inquirer](https://github.com/SBoudrias/Inquirer.js) and have more friendly user experience (i.e; promt to install each plugin etc)

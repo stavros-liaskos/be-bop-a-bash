@@ -19,7 +19,6 @@ alias cat="ccat"
 alias pstorm="phpstorm"
 
 # routes
-alias stavros="cd ~/developer/mine/stavrosliaskos"
 alias ~="cd ~"
 alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
 alias ..='cd ../'                           # Go back 1 directory level
@@ -32,11 +31,17 @@ alias .5='cd ../../../../../'               # Go back 5 directory levels
 alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 # docker commands
-# Todo...
-
-dstop() { docker stop $(docker ps -a -q); }
-drm() { docker rm $(docker ps -a -q); }
-drmi() { docker rmi $(docker images -q); }
+dstop() {
+  docker ps -q |xargs docker stop
+}
+drm() {
+  local name="$1"
+  docker ps -q "${name}" |xargs docker rm       # drm: deletes all stop containers drm -af deletes all containers
+}
+drmi() {
+  local name="$1"
+  docker images -q "${name}" |xargs docker rmi  # drmi: deletes all stop images drm -af deletes all images
+}
 
 # faster commands
 alias lls="ls -lah"
@@ -133,28 +138,19 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-#    export PS1="________________________________________________________________________________\n${MAGENTA}\u: ${YELLOW}\w ${CYAN} \n\$ \[$RESET\]"
-#    export PS1="________________________________________________________________________________\n${MAGENTA}\u: ${YELLOW}\w ${CYAN} on ${LIME_YELLOW} $(parse_git_branch) ${RED}  \n\$ \[$RESET\]"
-#    export PS1="________________________________________________________________________________\n${MAGENTA}\u: ${YELLOW}\w ${CYAN} on ${LIME_YELLOW} $( git branch 2> /dev/null | cut -f2 -d\* -s | sed "s/^ / [/" | sed "s/$/]/" ) ${RED}  \n\$ \[$RESET\]"
-    export PS1="________________________________________________________________________________\n${MAGENTA}\u: ${YELLOW}\w ${CYAN} on ${LIME_YELLOW} \$(parse_git_branch) ${RED}  \n\$ \[$RESET\]"
-
-#PS1='\w\[\033[0;32m\]$( git branch 2> /dev/null | cut -f2 -d\* -s | sed "s/^ / [/" | sed "s/$/]/" )\[\033[0m\] \$ '
-
-    export PS2="| => "
+export PS1="________________________________________________________________________________\n${MAGENTA}\u: ${YELLOW}\w ${CYAN} on ${LIME_YELLOW} \$(parse_git_branch) ${RED}  \n\$ \[$RESET\]"
+export PS2="| => "
 
 #   Set Paths
-#   ------------------------------------------------------------
-    export PATH="$PATH:/usr/local/bin/"
-    export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="$PATH:/usr/local/bin/"
+export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
-#   ------------------------------------------------------------
-    export EDITOR=/usr/bin/nano
+export EDITOR=/usr/bin/nano
 
 #   Set default blocksize for ls, df, du
 #   from this: http://hints.macworld.com/comment.php?mode=view&cid=24491
-#   ------------------------------------------------------------
-    export BLOCKSIZE=1k
+export BLOCKSIZE=1k
 
 
 ###############
@@ -196,15 +192,6 @@ extract () {
 fi
 }
 
-
-###########
-# Sources #
-###########
-# https://natelandau.com/my-mac-osx-bash_profile/
-# https://github.com/mathiasbynens/dotfiles
-# https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
-
-
 #######
 # PHP #
 #######
@@ -219,36 +206,3 @@ export PATH="/Users/stavros.liaskos/sonar-scanner-3.3.0.1492-macosx/bin:$PATH"
 # AWS-ADFS #
 ############
 export PATH="$PATH:$HOME/.local/bin"
-
-###########
-# FLACONI #
-###########
-#path needs to be relativ
-export BASH_ALIASES_PATH=developer/flaconi/dirty_little_helper/
-
-#path needs to be absolute
-export FLACONI_DOCKER_PATH=/Users/stavros.liaskos/developer/flaconi/flaconi-docker/
-
-#path needs to be absolute
-#comment out the next line if you also want to include the pim bash
-#export PIM_DOCKER_PATH=
-
-if [[ -f ~/$BASH_ALIASES_PATH/.bash_aliases ]]; then
-  . ~/$BASH_ALIASES_PATH/.bash_aliases
-  # comment out the next line if you also want to include the prompt
-  #. ~/$BASH_ALIASES_PATH/.prompt
-  # comment out the next line if you also want to include the pim bash
-  #. ~/$BASH_ALIASES_PATH/.bash_pim
-fi
-
-#reloads the file in current session
-reload(){
-    echo "source ~/$BASH_ALIASES_PATH/.bash_aliases and .bash_pim"
-    source ~/$BASH_ALIASES_PATH/.bash_aliases
-    # comment out the next line if you also want to include the pim bash
-    #source ~/$BASH_ALIASES_PATH/.bash_pim
-}
-
-
-
-export LOCAL_USER_ID=$(id -u)

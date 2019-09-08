@@ -55,9 +55,6 @@ alias
 
 You can always invoke cat after aliasing `ccat` by typing `\cat`.
 
-# TODO
-* Add [inquirer](https://github.com/SBoudrias/Inquirer.js) and have more friendly user experience (i.e; promt to install each plugin etc)
-* mv source links to readme
 
 ## Extra
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  

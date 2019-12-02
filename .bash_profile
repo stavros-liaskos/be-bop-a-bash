@@ -34,13 +34,23 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 dstop() {
   docker ps -q |xargs docker stop
 }
+
 drm() {
-  local name="$1"
-  docker ps -q "${name}" |xargs docker rm       # drm: deletes all stop containers drm -af deletes all containers
+  if [ -z "$1" ]
+  then
+    docker ps -q | xargs docker rm       # drm: deletes all stop containers drm -af deletes all containers
+  else
+    docker ps -q "$1" | xargs docker rm       # drm: deletes all stop containers drm -af deletes all containers
+  fi
 }
+
 drmi() {
-  local name="$1"
-  docker images -q "${name}" |xargs docker rmi  # drmi: deletes all stop images drm -af deletes all images
+  if [ -z "$1" ]
+  then
+    docker images -q | xargs docker rmi  # drmi: deletes all stop images drm -af deletes all images
+  else
+    docker images -q "$1" | xargs docker rmi  # drmi: deletes all stop images drm -af deletes all images
+  fi
 }
 
 # faster commands

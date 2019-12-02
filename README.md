@@ -44,13 +44,21 @@ To reset an alias:
 ```bash
 unalias ll
 ```
+To list all of your configured aliases:
+```bash
+alias
+```
 To reset a function:
 ````bash
 unset -f foo
 ````
-To list all of your configured aliases:
+To see the type and definition (for each defined alias, keyword, function, builtin or executable file):
 ```bash
-alias
+type -a foo
+```
+To see the type and definition (for each defined alias, keyword, function, builtin or executable file):
+```bash
+type -t foo
 ```
 
 You can always invoke cat after aliasing `ccat` by typing `\cat`.

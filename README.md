@@ -69,6 +69,7 @@ You can always invoke cat after aliasing `ccat` by typing `\cat`.
 - [Run eslint --fix on each Save](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000221130-Eslint-autofix-on-save-for-webstorm)   
 - [Live templates in PhpStorm](https://www.jetbrains.com/help/phpstorm/template-variables.html)
 - [Share live templates](https://www.jetbrains.com/help/phpstorm/sharing-live-templates.html)
+- [Share PhpStorm settings through repository](https://www.jetbrains.com/help/phpstorm/sharing-your-ide-settings.html#settings-repository)
 
 
 ## Sources

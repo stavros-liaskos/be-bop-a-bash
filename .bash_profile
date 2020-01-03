@@ -16,7 +16,7 @@ alias qfind="find . -name "
 alias decode="base64 -D <<< "
 hgrep() { history | grep "$@"; }
 alias cat="ccat"
-alias pstorm="phpstorm"
+alias pstorm="open -a PhpStorm"
 
 # routes
 alias ~="cd ~"

@@ -216,3 +216,8 @@ export PATH="/Users/stavros.liaskos/sonar-scanner-3.3.0.1492-macosx/bin:$PATH"
 # AWS-ADFS #
 ############
 export PATH="$PATH:$HOME/.local/bin"
+
+##########
+# mac OS #
+##########
+export BASH_SILENCE_DEPRECATION_WARNING=1

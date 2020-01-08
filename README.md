@@ -66,7 +66,7 @@ You can always invoke cat after aliasing `ccat` by typing `\cat`.
 
 ## Extra
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  
-- [Run eslint --fix on each Save](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000221130-Eslint-autofix-on-save-for-webstorm)   
+- [Run eslint --fix on each Save](https://www.jetbrains.com/help/phpstorm/2019.3/configuring-keyboard-and-mouse-shortcuts.html?utm_campaign=PS&utm_medium=link&utm_source=product&utm_content=2019.3#add-keyboard-shortcut)   
 - [Live templates in PhpStorm](https://www.jetbrains.com/help/phpstorm/template-variables.html)
 - [Share live templates](https://www.jetbrains.com/help/phpstorm/sharing-live-templates.html)
 - [Share PhpStorm settings through repository](https://www.jetbrains.com/help/phpstorm/sharing-your-ide-settings.html#settings-repository)

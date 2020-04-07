@@ -210,7 +210,7 @@ export PATH="/usr/local/php5/bin:/usr/local/bin:$PATH"
 #################
 # SONAR-SCANNER #
 #################
-export PATH="/Users/stavros.liaskos/sonar-scanner-3.3.0.1492-macosx/bin:$PATH"
+export PATH="/Users/stavros.liaskos/sonar-scanner-4.2.0.1873-macosx/bin:$PATH"
 
 ############
 # AWS-ADFS #

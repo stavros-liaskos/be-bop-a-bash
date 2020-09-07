@@ -67,7 +67,6 @@ You can always invoke cat after aliasing `ccat` by typing `\cat`.
 1. add `brew install jq`
 1. add conditional installers for plugins
 1. add shortcut for `add . && com 's' && pus`
-1. fix `com` to append flags (ie --amend)
 1. new command: pulm (git pull origin master)
 
 ## Extra

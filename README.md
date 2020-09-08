@@ -52,11 +52,11 @@ To reset a function:
 ````bash
 unset -f foo
 ````
-To see the type and definition (for each defined alias, keyword, function, builtin or executable file):
+To see the definition (for each defined alias, keyword, function, builtin or executable file):
 ```bash
 type -a foo
 ```
-To see the type and definition (for each defined alias, keyword, function, builtin or executable file):
+To see the type (for each defined alias, keyword, function, builtin or executable file):
 ```bash
 type -t foo
 ```

@@ -78,6 +78,7 @@ alias tar2="tar cvfj"
 alias zip="zip -r"
 
 # git commands
+alias glog="git log --pretty=format:'%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias status="git status"
 alias sta="git status"
 alias com="git commit -m"
@@ -221,7 +222,8 @@ export PATH="/Users/stavros.liaskos/sonar-scanner-4.2.0.1873-macosx/bin:$PATH"
 ############
 # AWS-ADFS #
 ############
-export PATH="$PATH:$HOME/.local/bin"
+alias aws-export-assume-profile="~/developer/flaconi/aws-export-assume-profile/aws-export-assume-profile"
+export PATH="/Users/stavros.liaskos/bin:$PATH"
 
 ##########
 # mac OS #

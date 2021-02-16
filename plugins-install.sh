@@ -46,8 +46,8 @@ echo "Installing yarn...";
 brew list yarn &>/dev/null || brew install yarn
 echo "Installation complete";
 
-echo "Installing now cli...";
-yarn global add now
+echo "Installing vercel cli...";
+npm i -g vercel
 echo "Installation complete";
 
 echo "Installing Image magick...";
@@ -60,6 +60,10 @@ echo "Installation complete";
 
 echo "Installing Image ncdu...";
 brew list ncdu &>/dev/null || brew install ncdu
+echo "Installation complete";
+
+echo "Installing nvm...";
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 echo "Installation complete";
 
 echo "Done!";

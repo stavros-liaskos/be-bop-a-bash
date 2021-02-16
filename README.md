@@ -34,6 +34,8 @@ Install your bash_profile
 * [ImageMagick](https://www.imagemagick.org/script/index.php)
 * [Httrack](https://www.httrack.com/)
 * [ncdu](https://dev.yorhel.nl/ncdu)
+* [nvm](https://github.com/nvm-sh/nvm)
+* [vercel](https://vercel.com/download)
 
 Sets `.gitignore_global` with some basic excludes.   
 In order to protect user's privacy (i.e. tokens), `.bash_profile` imports `.tokens` file from the same directory. 

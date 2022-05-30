@@ -38,7 +38,9 @@ Install your bash_profile
 * [vercel](https://vercel.com/download)
 
 Sets `.gitignore_global` with some basic excludes.   
-In order to protect user's privacy (i.e. tokens), `.bash_profile` imports `.tokens` file from the same directory. 
+
+For all private information (tokens, private `PATH`, etc), add a `~/be-bop-a-bash/private` file.   
+Run `./install`, it will be sourced but not overwritten  
 
 
 ## Info

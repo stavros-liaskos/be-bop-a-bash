@@ -2,7 +2,7 @@
 
 echo "Installing bash profile and git completion...";
 # copy config files to home
-cp -f ./.bash_profile ./git-completion.bash ./.gitignore_global ~
+cp -rf ./.bash_profile ./.gitignore_global ./be-bop-a-bash ~
 
 # run this files
 source ~/.bash_profile

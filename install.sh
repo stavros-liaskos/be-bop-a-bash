@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Installing bash profile and git completion...";
+echo "Installing bash profile...";
 # copy config files to home
 cp -rf ./.bash_profile ./.gitignore_global ./be-bop-a-bash ~
 

@@ -113,11 +113,6 @@ alias feap="git flow feature publish"
 #alias feaf="git flow feature finish"
 alias stash="git stash"
 
-# Add git completion to aliases
-__git_complete che _git_checkout
-__git_complete bra _git_branch
-__git_complete mer __git_merge
-
 # vagrant commands
 alias vup="vagrant up"
 alias vap="vagrant up"

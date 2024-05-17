@@ -3,7 +3,6 @@
 ########################
 # External files
 ########################
-source ~/be-bop-a-bash/git-completion.bash
 source ~/be-bop-a-bash/private
 source ~/be-bop-a-bash/alias
 source ~/be-bop-a-bash/ui

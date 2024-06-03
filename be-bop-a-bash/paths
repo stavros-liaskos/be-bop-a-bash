@@ -31,10 +31,15 @@ export NVM_DIR="$HOME/.nvm"
 ###########
 # phpbrew #
 ###########
-source /Users/stavros.liaskos/.phpbrew/bashrc
+export PATH="/usr/local/bin/phpbrew:$PATH"
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 ###########
 # Go Lang #
 ###########
 export GOPATH=~/go
+
+###########
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+###########

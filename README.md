@@ -67,11 +67,6 @@ type -t foo
 
 You can always invoke cat after aliasing `ccat` by typing `\cat`.
 
-## Todo/Known Issues
-1. add `brew install jq`
-1. add conditional installers for plugins
-1. add shortcut for `add . && com 's' && pus`
-
 ## Extra
 - [Open PhpStorm from CLI](https://intellij-support.jetbrains.com/hc/en-us/community/posts/208396265-Can-I-open-a-directory-from-command-line-)  
 - [Run eslint --fix on each Save](https://www.jetbrains.com/help/phpstorm/2019.3/configuring-keyboard-and-mouse-shortcuts.html?utm_campaign=PS&utm_medium=link&utm_source=product&utm_content=2019.3#add-keyboard-shortcut)   

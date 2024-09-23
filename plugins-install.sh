@@ -129,7 +129,7 @@ echo "Do you want to install nvm? [y,n]"
 read input
 if [[ $input == "Y" || $input == "y" ]]; then
         echo "Installing..."
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
         echo "Installation complete"
 fi
 

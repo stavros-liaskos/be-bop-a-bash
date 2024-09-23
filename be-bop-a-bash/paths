@@ -1,20 +1,5 @@
 #!/bin/bash
 
-#######
-# PHP #
-#######
-export PATH="/usr/local/php5/bin:/usr/local/bin:$PATH"
-
-#################
-# SONAR-SCANNER #
-#################
-export PATH="/Users/stavros.liaskos/sonar-scanner-4.2.0.1873-macosx/bin:$PATH"
-
-############
-# AWS-ADFS #
-############
-alias aws-export-assume-profile="~/developer/flaconi/aws-export-assume-profile/aws-export-assume-profile"
-export PATH="/Users/stavros.liaskos/bin:$PATH"
 
 ##########
 # mac OS #
@@ -26,20 +11,3 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 #######
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-###########
-# phpbrew #
-###########
-export PATH="/usr/local/bin/phpbrew:$PATH"
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
-
-###########
-# Go Lang #
-###########
-export GOPATH=~/go
-
-###########
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/opt/homebrew/bin/brew shellenv)"
-###########

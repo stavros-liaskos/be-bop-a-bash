@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# List files to load in .bash_profile
+source ~/be-bop-a-bash/private
+source ~/be-bop-a-bash/alias
+source ~/be-bop-a-bash/ui
+source ~/be-bop-a-bash/paths

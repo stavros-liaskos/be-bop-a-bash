@@ -104,14 +104,6 @@ alias clone="git clone"
 alias clo="git clone"
 alias reset="git reset"
 alias res="git reset"
-alias flow="git flow"
-alias flo="git flow"
-alias feature="git flow feature"
-alias fea="git flow feature"
-alias feas="git flow feature start"
-alias feap="git flow feature publish"
-# be careful with this. It also deletes the branch...
-#alias feaf="git flow feature finish"
 alias stash="git stash"
 
 # vagrant commands

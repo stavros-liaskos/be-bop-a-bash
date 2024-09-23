@@ -9,7 +9,7 @@ git clone https://github.com/stavros-liaskos/be-bop-a-bash.git && cd be-bop-a-ba
 ```
 
 #### Step 2: Install Plugins
-Install all the plugins
+Install plugins based on user input
 ```bash
 bash plugins-install.sh
 ```
@@ -30,7 +30,6 @@ Install your bash_profile
 * [htop](https://unix.stackexchange.com/questions/98253/how-do-i-install-htop-inside-mac-os-x)
 * [ffmpeg](https://www.ffmpeg.org/)
 * [yarn]()
-* [n](https://github.com/tj/n)
 * [ImageMagick](https://www.imagemagick.org/script/index.php)
 * [Httrack](https://www.httrack.com/)
 * [ncdu](https://dev.yorhel.nl/ncdu)
